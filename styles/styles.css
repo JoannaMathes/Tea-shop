@@ -1,11 +1,23 @@
+/* Universal Styles */
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 22px;
     color: seashell;
     background-color:black;
     opacity: 0.9;
+    max-width: 100%;
 }
-/* Header */
+body {
+    width: 100%;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+h4 {
+    font-weight: 200;
+}
+/* Header Styles */
 header {
   position: sticky;
   top: 0;
@@ -19,7 +31,10 @@ header {
 }
 #tea-cozy-logo {
     max-height: 50px;
-    padding: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 5px;
 }
 nav {
     position: absolute;
@@ -32,4 +47,126 @@ nav > ul > li {
 }
 nav a:hover {
     color: #AAA;
+}
+/* Banner Section Styles */
+.banner-section {
+    height: 700px;
+    background-image: url('../assets/img-mission-background.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-headline {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+}
+.mission-headline > h2 {
+    padding: 10px;
+}
+@media screen and (max-width: 980px) {
+    .mission-headline > h4 {
+        padding: 10px 20px;
+        line-height: 1.5;
+        font-size: 1.23rem;
+    }
+}
+/* Tea Flavors Section Styles */
+.tea-selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tea-selection-header {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+.tea-selection-header > h2 {
+    padding: 50px 10px 20px;
+}
+.flavors-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 10px 120px;
+}
+.flavors-gallery > figure {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+.flavors-gallery > figcaption {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+/* Locations Section Styles */
+.shop-locations {
+    width: 95%;
+    min-height: 600px;
+    background-image: url('../assets/img-locations-background.jpeg');
+    background-position: 45% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 0 auto;
+}
+.location-title {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    bottom: 15px;
+    align-self: flex-end;
+}
+.location-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+}
+.location-card {
+    width: 300px;
+    background-color: rgb(0, 0, 0, 1);
+    opacity: 1;
+    padding: 15px 0px 25px;
+    margin: 10px 40px;
+    text-align: center;
+    line-height: 4rem;
+}
+.location-card > h3 {
+    font-weight: 700;
+}
+.location-card > p {
+    font-weight: 200;
+}
+@media screen and (max-width:1225px)  {
+    .location-title {
+        margin-top: 65px;
+    }
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    font-family: 'Helvetica';
+}
+footer > h2 {
+    padding: 10px 0px 30px;
+}
+footer > h5 {
+    padding-bottom: 35px;
+}
+footer > h5:last-of-type {
+    text-align: left;
+    padding: 20px 0px 15px 20px;
 }
